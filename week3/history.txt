@@ -1,0 +1,4 @@
+    2  git add hello.sh
+    3  git commit -m "first file" hello.sh
+    4  git push
+
