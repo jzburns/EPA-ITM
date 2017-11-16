@@ -1,5 +1,12 @@
 #!/bin/bash
 
-./loadtest ???
+if [ $# -ne 2 ] ; then
+	echo "usage N M"
+	exit 2
+fi
 
-pkill
+./loadtest $1 &
+
+sleep $2
+
+pkill loadtest
